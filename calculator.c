@@ -2,7 +2,7 @@
 
 int main(){
     char operator;
-    float val1, val2;// well we'll go for a vveeerryy simple calculator
+    float val1, val2, res;// well we'll go for a vveeerryy simple calculator
 
     printf("Chose an operator: + - / x\n");
     scanf("%c", &operator);
@@ -11,23 +11,23 @@ int main(){
 
     switch(operator){
         case '+':
-            float res = val1 + val2;
+            res = val1 + val2;
             printf("%0.1f + %0.1f = %0.1f\n", val1, val2, res);
             break;
 
         case '-':
-            float resu = val1 - val2;
-            printf("%0.1f - %0.1f = %0.1f\n", val1, val2, resu);
+            res = val1 - val2;
+            printf("%0.1f - %0.1f = %0.1f\n", val1, val2, res);
             break;
 
         case '/':
-            float resul = val1 / val2;
-            printf("%0.1f / %0.1f = %0.1f\n", val1, val2, resul);
+            res = val1 / val2;
+            printf("%0.1f / %0.1f = %0.1f\n", val1, val2, res);
             break;
 
         case 'x':
-            float result = val1 * val2;
-            printf("%0.1f x %0.1f = %0.1f\n", val1, val2, result);//shh you didnt see anything weird fix but its a fix
+            res = val1 * val2;
+            printf("%0.1f x %0.1f = %0.1f\n", val1, val2, res);
             break;
     }
     return 0;
