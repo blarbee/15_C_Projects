@@ -1,7 +1,0 @@
-.vscode/
-*.o
-*.out
-find . -executable -type f >>.gitignore
-
-*
-!*.c
